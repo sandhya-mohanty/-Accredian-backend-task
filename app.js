@@ -8,7 +8,9 @@ const app = express();
 app.use(cors({
   origin: ["https://accredian-frontend-task-oth9.vercel.app "],
         methods: ["POST", "GET"],
-        credentials: true
+        credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"]
+
 }));
 
 app.use(bodyParser.json());
