@@ -6,7 +6,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-  origin: "https://accredian-frontend-task-oth9.vercel.app ",
+  origin: ["https://accredian-frontend-task-oth9.vercel.app "],
         methods: ["POST", "GET"],
         credentials: true
 }));
