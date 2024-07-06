@@ -13,8 +13,6 @@ app.use(cors({
 
 app.use(bodyParser.json());
 app.use('/api', referralRoutes);
-app.get("/api", (req, res) => {
-  res.json("Hello");
-})
+
 
 module.exports = app;
